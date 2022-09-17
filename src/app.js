@@ -17,14 +17,10 @@ const store = configureStore();
 // sorted by date -> Gas bill
 // sorted by amount -> Rent
 
-store.dispatch(addExpense({ description: "Water bill", amount: 4500 }));
-store.dispatch(addExpense({ description: "Gas bill", createdAt: 1000 }));
-store.dispatch(addExpense({ description: "Rent", amount: 180000 }));
-
 // store.dispatch(setTextFilter("water"));
 
-const state = store.getState();
-const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
+// const state = store.getState();
+// const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
 
 // console.log(visibleExpenses);
 // console.log(store.getState());
